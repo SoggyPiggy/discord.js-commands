@@ -1,0 +1,10 @@
+{
+  "name": "discord.js-commands",
+  "version": "0.1.0",
+  "description": "Custom command framework for discord.js",
+  "main": "index.js",
+  "repository": "https://github.com/SoggyPiggy/discord.js-commands.git",
+  "author": "SoggyPiggy <soggypiggy@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
