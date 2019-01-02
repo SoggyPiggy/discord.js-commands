@@ -7,6 +7,7 @@ const optionDefaults = {
 class CommandGroup {
   constructor(options = {}) {
     this.options = { ...optionDefaults, ...options };
+    this.commands = new Map();
   }
 
   get id() {
