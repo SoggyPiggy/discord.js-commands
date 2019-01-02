@@ -6,5 +6,8 @@
   "repository": "https://github.com/SoggyPiggy/discord.js-commands.git",
   "author": "SoggyPiggy <soggypiggy@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "peerDependencies": {
+    "discord.js": "^11.4.2"
+  }
 }
