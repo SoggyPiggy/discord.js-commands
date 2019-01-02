@@ -1,7 +1,7 @@
 const { EventEmitter } = require('events');
 
 const optionDefaults = {
-  prefix: '>', // Comand prefix;
+  prefix: '>', // Command prefix;
   watchFor: 60000, // Watch a failed command to be turned into a command for this long
 };
 
