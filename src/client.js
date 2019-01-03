@@ -1,4 +1,5 @@
 const { EventEmitter } = require('events');
+const { CommandRegistry } = require('./structures/commandregistry');
 
 const optionDefaults = {
   prefix: '>', // Command prefix;
@@ -9,6 +10,7 @@ class Client extends EventEmitter {
   constructor(discord, options = {}) {
     super();
     this.options = { ...optionDefaults, ...options };
+    this.registry = new CommandRegistry(this);
   }
 }
 
