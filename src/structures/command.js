@@ -7,6 +7,7 @@ const optionDefaults = {
 class Command {
   constructor(registry, options = {}) {
     this.registry = registry;
+    this.client = registry.client;
     this.options = { ...optionDefaults, ...options };
     if (typeof this.options.id !== 'string') {
       throw new Error('Command id must be a string');
