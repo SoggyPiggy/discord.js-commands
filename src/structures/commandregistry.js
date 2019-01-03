@@ -6,8 +6,6 @@ class CommandRegistry {
     this.client = client;
     this.commands = new Map();
     this.groups = new Map();
-
-    this.createGroup();
   }
 
   registerGroup(group) {
@@ -30,7 +28,7 @@ class CommandRegistry {
   }
 
   createCommand(options, run) {
-    const command = new Command(options);
+    const command = new Command(this, options);
     command.run = run;
     this.registerCommand(command);
   }
