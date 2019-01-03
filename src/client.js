@@ -9,8 +9,13 @@ const optionDefaults = {
 class Client extends EventEmitter {
   constructor(discord, options = {}) {
     super();
+    this.discord = discord;
     this.options = { ...optionDefaults, ...options };
     this.registry = new CommandRegistry(this);
+
+    discord.on('message', (message) => {
+      // TODO: Check message content for command.
+    });
   }
 }
 
