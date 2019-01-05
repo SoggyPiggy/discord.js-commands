@@ -9,9 +9,7 @@ class CommandGroup {
     this.options = { ...optionDefaults, ...options };
     this.commands = new Map();
 
-    if (typeof this.options.id !== 'string') {
-      throw new Error('Command Group must be a string');
-    }
+    if (typeof this.options.id !== 'string') throw new Error('Command Group id must be a string');
     if (typeof this.options.name !== 'string') this.options.name = this.options.id;
   }
 
