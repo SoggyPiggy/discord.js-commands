@@ -2,7 +2,7 @@ const optionDefaults = {
   id: null,
 };
 
-class CommandTypedef {
+class ParameterType {
   constructor(options = {}) {
     this.options = { ...optionDefaults, ...options };
 
@@ -17,4 +17,4 @@ class CommandTypedef {
   }
 }
 
-module.exports = { CommandTypedef };
+module.exports = { ParameterType };
