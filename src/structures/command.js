@@ -2,6 +2,7 @@ const optionDefaults = {
   id: null,
   name: null,
   group: null,
+  aliases: [],
 };
 
 class Command {
