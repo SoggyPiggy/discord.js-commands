@@ -1,5 +1,5 @@
 const { EventEmitter } = require('events');
-const { CommandRegistry } = require('./structures/commandregistry');
+const { CommandRegistry } = require('./structures/CommandRegistry');
 
 const optionDefaults = {
   prefix: '>', // Command prefix;
