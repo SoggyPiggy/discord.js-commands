@@ -13,7 +13,7 @@ module.exports = class extends ParameterType {
     let value = string;
     value = value.toLowerCase();
     if (truthy.includes(value)) return true;
-    if (false.includes(value)) return false;
+    if (falsey.includes(value)) return false;
     return null;
   }
 
